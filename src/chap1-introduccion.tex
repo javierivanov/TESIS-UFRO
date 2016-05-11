@@ -10,4 +10,18 @@
 	introducción \\
 	}
 \end{titular}
-
+\section{Descripción del problema}
+
+\subsection{Exposición general del problema}
+ACS es un software distribuido altamente complejo. Como toda infraestructura de software, este presenta fallas en su funcionamiento las que pueden llegar a provocar la detención completa del sistema, provocando retrasos en las tareas de observación.Gran parte del funcionamiento de ACS es permanentemente registrado en archivos de registros, los cuales suman diariamente grandes cantidades de información sobre la operación y eventos asociados a diferentes niveles de alerta. Sin embargo, dada la gran cantidad de registros generados por este sistema, resulta complejo el poder analizar estos datos en forma eficiente y efectiva. ALMA tiene una infraestructura altamente compleja, lo que se refleja en sus sistema de generación de logs, por lo que es natural encontrar problemáticas asociadas a numerosas causas y por este motivo es necesario buscar y analizar estas posibles problemáticas. El problema se plantea complejo tanto por la diversidad de los logs como por su cantidad. Por otra parte, se ha desarrollado herramientas y metodologías de minería de datos que tienen por objetivo el apoyar el análisis de grandes volúmenes de datos de manera de poder extraer conocimientos nuevos y útiles. Estas herramientas son capaces de procesar grandes volúmenes de información y encontrar relaciones entre las múltiples variables que afectan los procesos. Para poder aplicar estas herramientas es necesario plantear objetivos de búsqueda y aplicar una metodología de minería de datos CRSIP. Sin embargo, debido a la alta complejidad del sistema ACS, los objetivos de búsqueda que guían el análisis son múltiples, lo que requiere de una comprensión muy acabada de todo el proceso para poder modelar algunas partes a través de la minería de datos y buscar entonces las relaciones que permiten comprender por ejemplo, porqué y bajo qué circunstancias el sistema falla. El estudio y comprensión del sistema ACS permitirá la identificación de un problema específico para el cual es posible plantear una aproximación basada en minería de datos.
+
+\subsection{Situación actual del problema}
+Actualmente los registros de ACS son numerosos, el origne de estos registros provienen en su mayoria de todos los sistemas y subsistemas, desde operaciones de alto nivel hasta operaciones de bajo nivel. Todos estos registros son almacenados en un mismo formato y lugar. Para acceder a estos registros es posible a traves del servicio de Kibana, que permite realizar búsquedas y obtener estos registros.La idea principal es reducir el espacio generado por los registros de ACS en el contexto de un proceso de observación.Para este enfoque se plantea por parte de ALMA utilizar el concepto de máquinas de estado finitas (MEF) para reducir el conjunto de datos a estudiar, generando un modelo sobre el proceso de observación. 
+\section{Objetivos}
+\subsection{General}
+\begin{itemize}
+	\item Desarrollar una herramienta de pre-procesamiento para mineria de datos basada en los registros de ACS.
+\end{itemize}\subsection{Específicos}
+\begin{itemize}
+	\item 
+\end{itemize}
